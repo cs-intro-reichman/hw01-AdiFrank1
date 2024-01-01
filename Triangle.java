@@ -10,10 +10,14 @@ public class Triangle {
 		int b = Integer.parseInt(args[1]);
 		int c = Integer.parseInt(args[2]);
 
-		if ((a+b > c) && (b+c >a) && (a+c > b))
-			System.out.println(a + ", " + b + ", "+ c + ": true");
-		else
-			System.out.println(a + ", "+ b + ", " + c + ": false");
+		/*
+  		#feedback:
+    		seems like the value you print is the same of the if\else.
+		Also, the whole text format is the same, maybe it's better to not use condition here, but boolean variable.
+
+		*/
+		boolean isTriangle = ((a+b > c) && (b+c >a) && (a+c > b));
+		System.out.println(a + ", " + b + ", "+ c + ": "+ isTriangle);
 	
 	}
 }
