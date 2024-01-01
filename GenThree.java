@@ -4,7 +4,7 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		double rand = Math.random();
+	double rand = Math.random();
 	int a = Integer.parseInt(args[0]);
 	int b = Integer.parseInt(args[1]);
 
@@ -14,15 +14,16 @@ public class GenThree {
 	int num1 = (int) ((Math.random () * (max-min))+min);
 	int num2 = (int) ((Math.random () * (max-min))+min);
 	int num3 = (int) ((Math.random () * (max-min))+min);
-	int minum = Math.min (num1,num2);
 
-	System.out.println(num1);
-	System.out.println(num2);
-	System.out.println(num3);
+	/*
+ 	#Feedback:
+  	You can use same min method twice instead of using condition for the second check.
+   	Also, if you do use if\else condition, even when there's only one line of code inside, better to always use {}.
+ 	*/
+	int minum = Math.min(num1,num2);
+	minimum = Math.min(minimum,num3);
 
-	if (minum < num3)
-		System.out.println("The minimal generated number was: " +minum);
-	else
-		System.out.println("The minimal generated number was: " +num3);	
-		}
+	System.out.println("The minimal generated number was: " +minum);
+
 	}
+}
